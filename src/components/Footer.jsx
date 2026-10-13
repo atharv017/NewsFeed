@@ -21,7 +21,7 @@ function Footer() {
 
                     <div className='row p-4 d-flex justify-content-center  '>
                         <div className='col-xl-6 col-md-4 col-sm-12 text-center '>
-                            <img src='src\assets\newspaper_PNG34.png' height={"195px"} />
+                            <img src='dist\assets\newspaper_PNG34-vh1AzrPL.png' height={"195px"} />
                             <p>Discover the latest news, trending stories, and insights that matter to you.</p>
                         </div>
 
