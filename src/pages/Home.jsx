@@ -8,6 +8,7 @@ import { SearchContext } from '../context/SearchContext';
 import { FaSearch } from "react-icons/fa";
 import { ThemeContext } from '../context/ThemeContext';
 import { toast , ToastContainer } from 'react-toastify';
+import axios from 'axios';
 
 
 function Home() {
@@ -54,7 +55,7 @@ function Home() {
 
     const newsData = async () => {
         try {
-            const response = await fetch(`https://newsapi.org/v2/everything?q=${searchValue}&sortBy=publishedAt&apiKey=${API_KEY}`)
+            const response = await axios.get(`https://newsapi.org/v2/everything?q=${searchValue}&sortBy=publishedAt&apiKey=${API_KEY}`)
             
             if(!response.ok){
                 throw new Error(`HTTP error! Status: ${response.status}`);
