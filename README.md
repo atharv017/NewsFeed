@@ -53,9 +53,9 @@ To run this project, you will need to add the following environment variables to
 
 ## Screenshots
 
-![App Screenshot](src\assets\Screenshot 2026-10-14 210128.png)
-![App Screenshot](src\assets\Screenshot 2026-10-14 210147.png)
-![App Screenshot](src\assets\Screenshot 2026-10-14 210201.png)
+![App Screenshot](screenshot/Screenshot%202026-10-14%20210128.png)
+![App Screenshot](screenshot/Screenshot%202026-10-14%20210147.png)
+![App Screenshot](screenshot/Screenshot%202026-10-14%20210201.png)
 ## Tech Stack
 
 **Client:** React.js , Bootstrap
