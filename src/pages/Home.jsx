@@ -55,17 +55,18 @@ function Home() {
 
     const newsData = async () => {
         try {
-            const response = await axios.get(`https://newsapi.org/v2/everything?q=${searchValue}&sortBy=publishedAt&apiKey=${API_KEY}`)
+            const response = await axios.get(`https://newsapi.org/v2/everything?q=${searchValue}&sortBy=publishedAt&apiKey=${API_KEY}`);
             
-            if(!response.ok){
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
+            // if(!response.ok){
+            //     throw new Error(`HTTP error! Status: ${response.status}`);
+            // }
 
-            const jsonData = await response.json();
-            setData(jsonData.articles)
+            // const jsonData = await response.data;
+            setData(response.data.articles)
+            // console.log(response.data.articles)
           
         } catch (error) {
-            toast.error(error.message)
+            toast.error(error.response?.data?.message || error.message)
         }
     }
 
